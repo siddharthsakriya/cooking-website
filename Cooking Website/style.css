@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+
+}
+
+body{
+    background-color: #2F2FA2;
+    color: #F64C72;
+}
+
+/* navbar styles */
+nav{
+  background: #242582; 
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  flex-wrap: wrap;  
+  display:flex;
+  
+}
+nav ul li{
+  padding: 15px 3px;
+}
+nav ul li.items{
+  margin: 3px 16px;
+  text-align: center;
+  order: 3;
+  position: relative;
+}
+nav ul li.mainlogo{
+  flex: 1;
+  color: #99738E;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color: #99738E;
+  font-size: 17px;
+  
+}
+nav ul li:hover a{
+  color: #F64C72;
+  text-decoration: underline;
+}
+
+nav ul li i{
+  font-size: 22px;
+}
+
+nav ul li.btn{
+  display: none;
+}
+
+/*Main webpage styles*/
+
+.container{
+  width: 60%;
+  margin-top: 10%;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.container img{
+  padding-top:10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 60%;
+  padding-bottom: 10%;
+}
+
+.form{
+
+  text-align: center;
+  margin-top: 10%;
+}
+
+.form2{
+
+  text-align: center;
+  margin-top: 10%;
+}
+
+#underline{
+  text-decoration: underline;
+}
+
+
+/*media query for the nav bar*/
+
+@media all and (max-width: 950px){
+  
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block; 
+  }
+  nav ul li.btn.hide i:before{
+    content: '\f00d';
+  }
+
+}
+
+

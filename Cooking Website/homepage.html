@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/ace993c6bc.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+
+
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+<li class="mainlogo">Anabolic Cooking Site</li>
+<li class="items"><a href="homepage.html">Home</a></li>
+<li class="items"><a href="About.html">About</a></li>
+<li class="items"><a href="Contact Us.html">Contact</a></li>
+<li class="items"><a href="Search.html">Search</a></li>
+<li class="items"><a href="form.html">Form</a></li>
+<li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+</ul>
+</nav>
+
+
+<div class="container">
+    
+<h1 id="underline">Welcome</h1>
+<br>
+<p>Thanks for checking out our website, you are able to search for
+  different recipes which are on our database or you could maybe help 
+  the community out and add some of your own...
+</p>
+<p>Are you an admin? Click <a href="AdminLogin.html">here</a> to access the login page</p>
+<img src="Homepage.jpg" alt="Man exercising"> </img>
+
+</div>
+
+
+<script>
+      
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('.btn').toggleClass("hide");
+        });
+      
+    </script>
+
+  </body>
+
+</html>

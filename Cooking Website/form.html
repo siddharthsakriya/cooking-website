@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/ace993c6bc.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Form</title>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+  <li class="mainlogo">Anabolic Cooking Site</li>
+  <li class="items"><a href="homepage.html">Home</a></li>
+  <li class="items"><a href="About.html">About</a></li>
+  <li class="items"><a href="Contact Us.html">Contact</a></li>
+  <li class="items"><a href="Search.html">Search</a></li>
+  <li class="items"><a href="form.html">Form</a></li>
+  <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+  </ul>
+  </nav>
+
+
+  
+
+<form action="cooking.php" class="form2" method="POST">
+<h1 id="underline">Recipe Form</h1>
+<br>
+Recipe Name:<br>
+<input type="text" name="recipeName" size="30">
+<br>
+<br>
+Ingredients:<br>
+<textarea rows="5" cols="50" name="Ingredients"></textarea>
+<br>
+<br>
+Cooking Method:<br>
+<textarea rows="5" cols="50" name="method"></textarea>
+<br>
+<br>
+Calories:<br>
+<input type="text" name="calories" size="8">
+<br>
+<br>
+Health Rating<br>
+<input type="text" name="rating" size="8">
+<br>
+<br>
+<input type="submit" name="submit" value="Submit">
+</form>
+
+<script>
+      
+  $('.btn').click(function(){
+    $('.items').toggleClass("show");
+    $('ul li').toggleClass("hide");
+  });
+
+
+  </script>
+</body>
+</html>
